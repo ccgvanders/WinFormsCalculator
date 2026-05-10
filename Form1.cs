@@ -1,9 +1,11 @@
+using System.Reflection.Metadata.Ecma335;
+
 namespace WinFormsCalculator
 {
     public partial class CalculatorForm : Form
     {
         private double firstNumber; // variable for the first entered number
-        private string selectedOperator; // the selector pressed, e.g. +, -, x, /
+        private string selectedOperator = ""; // the selector pressed, e.g. +, -, x, /
 
         public CalculatorForm()
         {
@@ -77,6 +79,16 @@ namespace WinFormsCalculator
                 lblDisplay.Text = result.ToString();
             }
 
+        }
+
+        private void btnDecinalPoint_Click(object sender, EventArgs e)
+        {
+            if (lblDisplay.Text.Contains("."))
+            {
+                return;
+            }
+
+            lblDisplay.Text = lblDisplay.Text + ".";
         }
     }
 }

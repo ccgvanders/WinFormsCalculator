@@ -262,6 +262,7 @@
             btnDecinalPoint.TabIndex = 17;
             btnDecinalPoint.Text = ".";
             btnDecinalPoint.UseVisualStyleBackColor = false;
+            btnDecinalPoint.Click += btnDecinalPoint_Click;
             // 
             // CalculatorForm
             // 
