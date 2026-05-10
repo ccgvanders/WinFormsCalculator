@@ -200,7 +200,7 @@
             btnSubtract.Name = "btnSubtract";
             btnSubtract.Size = new Size(70, 70);
             btnSubtract.TabIndex = 10;
-            btnSubtract.Text = "− ";
+            btnSubtract.Text = "−";
             btnSubtract.UseVisualStyleBackColor = false;
             btnSubtract.Click += operatorButton_Click;
             // 
@@ -238,6 +238,7 @@
             btnEquals.TabIndex = 15;
             btnEquals.Text = "=";
             btnEquals.UseVisualStyleBackColor = false;
+            btnEquals.Click += btnEquals_Click;
             // 
             // btnZero
             // 
